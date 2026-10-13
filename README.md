@@ -2,8 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates Continuous Integration and Continuous
-Delivery using GitHub Actions, Tekton, and OpenShift.
+This project demonstrates Continuous Integration and Continuous Delivery using GitHub Actions, Tekton, and OpenShift.
 
 ## Objectives
 
@@ -32,6 +31,4 @@ Delivery using GitHub Actions, Tekton, and OpenShift.
 
 ## Current Status
 
-The local application, automated testing configuration, and CI/CD
-workflow definitions are being prepared. OpenShift deployment and
-pipeline execution require access to an OpenShift cluster.
+The application, automated testing configuration, and CI/CD workflow definitions are being prepared. OpenShift deployment and pipeline execution require access to an OpenShift cluster.
