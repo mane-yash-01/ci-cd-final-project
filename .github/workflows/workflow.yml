@@ -27,9 +27,9 @@ jobs:
 
       - name: Lint with flake8
         run: flake8 app.py test_app.py
-
-    
+      
       - name: Run unit tests with nose
         run: |
           python -c 'import collections, collections.abc, nose.core, sys; collections.Callable = collections.abc.Callable; sys.argv = ["nosetests", "-v"]; nose.core.main()'
+
 
