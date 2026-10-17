@@ -8,9 +8,6 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(b"SERVICERUNNING\n")
 
-    def log_message(self, format, *args):
-        print(format % args, flush=True)
-
 
 if __name__ == "__main__":
     server = HTTPServer(("0.0.0.0", 8000), Handler)
