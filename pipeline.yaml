@@ -1,0 +1,14 @@
+apiVersion: tekton.dev/v1
+kind: Pipeline
+metadata:
+  name: ci-cd-pipeline
+spec:
+  workspaces:
+    - name: shared-workspace
+  tasks:
+    - name: run-tests
+      taskRef:
+        name: ci-cd-test
+      workspaces:
+        - name: source
+          workspace: shared-workspace
