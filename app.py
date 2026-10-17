@@ -1,6 +1,10 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 
+def greet(name):
+    return f"Hello, {name}!"
+
+
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
